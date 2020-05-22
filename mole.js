@@ -2,6 +2,10 @@ function getSadInterval() {
   return Date.now() + 500;
 }
 
+function getGoneInterval() {
+  return Date.now() + Math.floor(Math.random() * 1800) + 2000;
+}
+
 const moles = [
   {
     status: "sad",
