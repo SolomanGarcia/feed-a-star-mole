@@ -121,7 +121,7 @@ function feed(event) {
 
   score++;
   if (score >= 10) {
-    window();
+    win();
   }
 }
 
