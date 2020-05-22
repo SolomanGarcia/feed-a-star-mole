@@ -93,6 +93,11 @@ function getNextStatus(mole) {
       mole.node.children[0].src = "./images/mole-hungry.png";
       break;
     case "hungry":
+      mole.status = "sad";
+      mole.next = getSadInterval();
+      mole.node.children[0].classList.remove("hungry");
+      mole.node.children[0].src = "./images/mole-sad.png";
+      break;
   }
 }
 
