@@ -71,6 +71,14 @@ function nextFrame() {
   const now = Date.now();
 
   if (runAgainAt <= now) {
-    for (let i = 0; i < moles.length; i++) {}
+    for (let i = 0; i < moles.length; i++) {
+      if (moles[i].next <= now) {
+        getNextStatus(moles[i]);
+      }
+    }
+    runAgainAt = now + 100;
   }
+  requestAnimationFrame(nextFrame);
 }
+
+nextFrame();
