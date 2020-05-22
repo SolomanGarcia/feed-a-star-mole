@@ -78,7 +78,7 @@ function getNextStatus(mole) {
     case "sad":
       mole.next = getSadInterval();
       mole.status = "leaving";
-      mole.node.children[0].src = "./imgages/mole-leaving.png";
+      mole.node.children[0].src = "./images/mole-leaving.png";
       break;
     case "leaving":
       mole.next = getGoneInterval();
