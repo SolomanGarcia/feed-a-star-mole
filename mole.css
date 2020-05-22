@@ -10,6 +10,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
+  height: 100vh;
 }
 
 .bg {
@@ -21,4 +22,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.hole {
+  background-color: black;
+  border-radius: 50%;
+  overflow: visible;
+  width: 267px;
+  height: 267px;
 }
