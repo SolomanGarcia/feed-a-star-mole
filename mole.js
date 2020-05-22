@@ -77,7 +77,10 @@ function getNextStatus(mole) {
       mole.node.src = "./imgages/mole-leaving.png";
       break;
     case "leaving":
-      mole.next;
+      mole.next = getGoneInterval();
+      mole.status = "gone";
+      mole.node.children[0].classList.add("gone");
+      break;
   }
 }
 
