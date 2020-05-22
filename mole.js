@@ -65,6 +65,18 @@ const moles = [
   },
 ];
 
+function getNextStatus(mole) {
+  switch (mole.status) {
+    case "sad":
+      mole.next = getSadInterval();
+      mole.status = "leaving";
+      mole.node.src = "./imgages/mole-leaving.png";
+      break;
+    case "leaving":
+      mole.next;
+  }
+}
+
 let runAgainAt = Date.now() + 100;
 
 function nextFrame() {
