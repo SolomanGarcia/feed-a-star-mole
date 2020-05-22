@@ -31,3 +31,15 @@ body {
   width: 267px;
   height: 267px;
 }
+
+.hole-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mole {
+  position: relative;
+  right: 30px;
+}
