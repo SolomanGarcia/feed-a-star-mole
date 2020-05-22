@@ -86,7 +86,7 @@ function getNextStatus(mole) {
       mole.next = getSadInterval();
       mole.status = "leaving";
       if (mole.king) {
-        mole.children[0].src = "./images/king-mole-leaving.png";
+        mole.node.children[0].src = "./images/king-mole-leaving.png";
       } else {
         mole.node.children[0].src = "./images/mole-leaving.png";
       }
@@ -113,7 +113,7 @@ function getNextStatus(mole) {
       mole.next = getSadInterval();
       mole.node.children[0].classList.remove("hungry");
       if (mole.king) {
-        mole.node.children[0].src = "./images/king-mole.sad.png";
+        mole.node.children[0].src = "./images/king-mole-sad.png";
       } else {
         mole.node.children[0].src = "./images/mole-sad.png";
       }
